@@ -11,7 +11,7 @@ async function run() {
 
         const newIssue = await octokit.issues.create({
             title: issueTitle,
-            body:joke,
+            body:joke
         });
     }catch(exception){
         core.setOutput(exception);
