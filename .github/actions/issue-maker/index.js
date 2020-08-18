@@ -14,6 +14,7 @@ async function run() {
             body:joke,
         });
     }catch(exception){
+        core.setOutput(exception);
         core.setFailed("Failed to create issue");
     }
 }
